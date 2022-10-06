@@ -127,7 +127,7 @@ document.body.onload=()=>{
         $('#popup1').css({'display':'flex'});
         var a = setInterval(()=>{
           console.log('a')
-          if(screen.availHeight<screen.availWidth){document.getElementById('popup1').style.display = 'none';clearInterval(a);}
+          if(window.innerHeight < window.innerWidth){document.getElementById('popup1').style.display = 'none';clearInterval(a);location.reload()}
         })
     }
   }else{
