@@ -1,4 +1,4 @@
-let vw = screen.availWidth/100;
+let vw = window.innerWidth/100;
  document.body.onmousedown = (e)=>{
  if(e.target== document.getElementsByClassName('right')[0]){
    a0();
