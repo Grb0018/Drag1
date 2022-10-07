@@ -44,8 +44,8 @@ body{
 }
 .right,.right2,.right3,.right4,.right5,.right6,.right7,.right8{
     display: block;
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     background-size: cover;
     position: relative;
     border-radius: 50%;
