@@ -44,12 +44,13 @@ body{
 }
 .right,.right2,.right3,.right4,.right5,.right6,.right7,.right8{
     display: block;
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 2vw;
+    height: 2vw;
     background-size: cover;
     position: relative;
     border-radius: 50%;
-    background-image:url(./IMG/right-arrow.png);
+    background-color: orangered;
+    border: 1px solid lightgrey;
 }
 .popup {
     display: none;
