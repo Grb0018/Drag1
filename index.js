@@ -124,11 +124,11 @@ function openFullscreen() {
 document.body.onload=()=>{
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     document.getElementById('mobile').style.display = 'block';
-    if(screen.availHeight>screen.availWidth){
+    if(window.innerHeight>window.innerWidth){
         $('#popup1').css({'display':'flex'});
         var a = setInterval(()=>{
           console.log('a')
-          if(screen.availHeight<screen.availWidth){document.getElementById('popup1').style.display = 'none';location.reload();clearInterval(a);}
+          if(window.innerHeight<window.innerWidth){document.getElementById('popup1').style.display = 'none';location.reload();clearInterval(a);}
         })
     }
   }else{
