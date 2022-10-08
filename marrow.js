@@ -1,347 +1,142 @@
-// function am0(){
-//     document.body.ontouchmove = (ee)=>{
-//         const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-//         const carPos = { x: (26*vw), y: (22.2*vw) }
-//         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
-//         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
-//         document.getElementsByClassName('ring1')[0].style.rotate = angle+'deg';
-//         document.getElementsByClassName('arrow')[0].style.width= mousePos.x - carPos.x +'px'
-//         }
-//        var arrowMove = setInterval(()=>{
-//         if(parseInt($('.ring1').css('rotate')) < 0.5 && parseInt($('.ring1').css('rotate')) > -2){
-//             if(parseInt($('.arrow').css('width')) >(22*vw)){
-//                 clearInterval(arrowMove);
-//                 document.body.ontouchmove = ()=>{}
-//             }
-//         }
-//         if(parseInt($('.ring1').css('rotate')) < 8 && parseInt($('.ring1').css('rotate')) > 6){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(22.8*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 14.5 && parseInt($('.ring1').css('rotate')) > 13){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(24*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 21 && parseInt($('.ring1').css('rotate')) > 19){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(23.2*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 26 && parseInt($('.ring1').css('rotate')) > 24){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(24.4*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 32 && parseInt($('.ring1').css('rotate')) > 30){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(26.5*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 36 && parseInt($('.ring1').css('rotate')) > 34){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(27*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//          if(parseInt($('.ring1').css('rotate')) < 41 && parseInt($('.ring1').css('rotate')) > 38){
-//             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-//              if(parseInt($('.arrow').css('width')) >(28*vw)){
-//                  clearInterval(arrowMove);
-//                  document.body.ontouchmove = ()=>{}
-//              }
-//          }
-//        }) 
-//      }
-// function am1(){
-//     document.body.ontouchmove = (ee)=>{
-//         const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-//         const carPos = { x: (28*vw), y: (25.4*vw) }
-//         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
-//         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
-//         document.getElementsByClassName('ring2')[0].style.rotate = angle+'deg';
-//         document.getElementsByClassName('arrow2')[0].style.width= mousePos.x - carPos.x +'px'
-//         }
-//         var arrowMove = setInterval(()=>{
-//             if(parseInt($('.ring2').css('rotate')) < -5.8 && parseInt($('.ring2').css('rotate')) > -8){
-//                 if(parseInt($('.arrow2').css('width'))/vw >20){
-//                     console.log('p')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 0.5 && parseInt($('.ring2').css('rotate')) > -1){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19.3){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 8 && parseInt($('.ring2').css('rotate')) > 5.4){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 14.4 && parseInt($('.ring2').css('rotate')) > 12.4){
-//                 if(parseInt($('.arrow2').css('width'))/vw >18.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 23 && parseInt($('.ring2').css('rotate')) > 21){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 28 && parseInt($('.ring2').css('rotate')) > 26){
-//                 if(parseInt($('.arrow2').css('width'))/vw >22.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 34 && parseInt($('.ring2').css('rotate')) > 32){
-//                 if(parseInt($('.arrow2').css('width'))/vw >23.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 37 && parseInt($('.ring2').css('rotate')) > 35){
-//                 if(parseInt($('.arrow2').css('width'))/vw >25.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-
-
-// })
-// }
-// function am1(){
-//     document.body.ontouchmove = (ee)=>{
-//         const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-//         const carPos = { x: (28*vw), y: (25.4*vw) }
-//         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
-//         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
-//         document.getElementsByClassName('ring2')[0].style.rotate = angle+'deg';
-//         document.getElementsByClassName('arrow2')[0].style.width= mousePos.x - carPos.x +'px'
-//         }
-//         var arrowMove = setInterval(()=>{
-//             if(parseInt($('.ring2').css('rotate')) < -5.8 && parseInt($('.ring2').css('rotate')) > -8){
-//                 if(parseInt($('.arrow2').css('width'))/vw >20){
-//                     console.log('p')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 0.5 && parseInt($('.ring2').css('rotate')) > -1){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19.3){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 8 && parseInt($('.ring2').css('rotate')) > 5.4){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 14.4 && parseInt($('.ring2').css('rotate')) > 12.4){
-//                 if(parseInt($('.arrow2').css('width'))/vw >18.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 23 && parseInt($('.ring2').css('rotate')) > 21){
-//                 if(parseInt($('.arrow2').css('width'))/vw >19){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 28 && parseInt($('.ring2').css('rotate')) > 26){
-//                 if(parseInt($('.arrow2').css('width'))/vw >22.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 34 && parseInt($('.ring2').css('rotate')) > 32){
-//                 if(parseInt($('.arrow2').css('width'))/vw >23.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-//             if(parseInt($('.ring2').css('rotate')) < 37 && parseInt($('.ring2').css('rotate')) > 35){
-//                 if(parseInt($('.arrow2').css('width'))/vw >25.8){
-//                     console.log('p1')
-//                     clearInterval(arrowMove);
-//                     document.body.ontouchmove = ()=>{}
-//                 }
-//             }
-
-
-// })
-// }
-
 function am0(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (26*vw), y: (22.2*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (26*vw), y: (18.2*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring1')[0].style.rotate = angle+'deg';
-        document.getElementsByClassName('arrow')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
+        document.getElementsByClassName('arrow1')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
        var arrowMove = setInterval(()=>{
         if(parseInt($('.ring1').css('rotate')) < 0.5 && parseInt($('.ring1').css('rotate')) > -2){
-            if(parseInt($('.arrow').css('width')) >(22*vw)){
+            if(parseInt($('.arrow1').css('width')) >(22*vw)){
                 clearInterval(arrowMove);
-                document.body.ontouchmove = ()=>{}
-                $('.arrow').css('width','23vw')
-                $('.ring1').css('rotate','1deg');
                 if($('#ringa').attr('a') != 0){
-                $('.arrow').css('width','0.5vw')
-                $('.ring1').css('rotate','0deg');
-                }else{
-                    $('#ringa').attr('a',1)
+                    var aaa = $('#ringa').attr('a')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                 }
+                document.body.ontouchmove = ()=>{}
+                $('.arrow1').css('width','22vw')
+                $('.ring1').css('rotate','1deg');
+            
+                    $('#ringa').attr('a',1)
+                
                 
             }
         }
         if(parseInt($('.ring1').css('rotate')) < 9 && parseInt($('.ring1').css('rotate')) > 6){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(22*vw)){
+             if(parseInt($('.arrow1').css('width')) >(22*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','23vw')
-                $('.ring1').css('rotate','8.6deg')
                 if($('#ringb').attr('b') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringb').attr('b',1)
+                    var aaa = $('#ringb').attr('b')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','22vw')
+                 $('.ring1').css('rotate','8.6deg')
+                        $('#ringb').attr('b',1)
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 17 && parseInt($('.ring1').css('rotate')) > 13.5){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(22.5*vw)){
+             if(parseInt($('.arrow1').css('width')) >(22.5*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','23.5vw')
-                $('.ring1').css('rotate','16deg')
                 if($('#ringc').attr('c') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringc').attr('c',1)
+                    var aaa = $('#ringc').attr('c')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','23vw')
+                 $('.ring1').css('rotate','16deg')
+                        $('#ringc').attr('c',1)
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 24 && parseInt($('.ring1').css('rotate')) > 20){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(24*vw)){
+             if(parseInt($('.arrow1').css('width')) >(24*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','25vw')
-                 $('.ring1').css('rotate','23.5deg')
                  if($('#ringd').attr('d') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringd').attr('d',1)
+                    var aaa = $('#ringd').attr('d')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','24vw')
+                 $('.ring1').css('rotate','23.5deg')
+                        $('#ringd').attr('d',1)
+                    
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 31 && parseInt($('.ring1').css('rotate')) > 25){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(25.4*vw)){
+             if(parseInt($('.arrow1').css('width')) >(25.4*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','26.2vw')
-                 $('.ring1').css('rotate','30deg')
                  if($('#ringe').attr('e') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringe').attr('e',1)
+                    var aaa = $('#ringe').attr('e')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','25.7vw')
+                 $('.ring1').css('rotate','29deg')
+                        $('#ringe').attr('e',1)
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 36 && parseInt($('.ring1').css('rotate')) > 32){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(27*vw)){
+             if(parseInt($('.arrow1').css('width')) >(27*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','28vw')
-                 $('.ring1').css('rotate','35.5deg')
                  if($('#ringf').attr('f') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringf').attr('f',1)
+                    var aaa = $('#ringf').attr('f')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','27.7vw')
+                 $('.ring1').css('rotate','35.5deg')
+                        $('#ringf').attr('f',1)
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 41 && parseInt($('.ring1').css('rotate')) > 38){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(29*vw)){
+             if(parseInt($('.arrow1').css('width')) >(29*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','30.5vw')
-                 $('.ring1').css('rotatf','40.5deg')
                  if($('#ringg').attr('g') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringg').attr('g',1)
+                    var aaa = $('#ringg').attr('g')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','29.9vw')
+                 $('.ring1').css('rotatf','40.5deg')
+                        $('#ringg').attr('g',1)
              }
          }
          if(parseInt($('.ring1').css('rotate')) < 47 && parseInt($('.ring1').css('rotate')) > 43){
             // console.log(parseInt($('.arrow').css('width'))>(0.18*vw))
-             if(parseInt($('.arrow').css('width')) >(31*vw)){
+             if(parseInt($('.arrow1').css('width')) >(31*vw)){
                  clearInterval(arrowMove);
-                 document.body.ontouchmove = ()=>{}
-                 $('.arrow').css('width','33vw')
-                 $('.ring1').css('rotate','45deg')
                  if($('#ringh').attr('h') != 0){
-                    $('.arrow').css('width','0.5vw')
-                    $('.ring1').css('rotate','0deg');
-                    }else{
-                        $('#ringh').attr('h',1)
+                    var aaa = $('#ringh').attr('h')
+                $('.arrow'+aaa).css('width','0.5vw')
+                $('.ring'+aaa).css('rotate','0deg');
                     }
+                 document.body.ontouchmove = ()=>{}
+                 $('.arrow1').css('width','32.2vw')
+                 $('.ring1').css('rotate','44.5deg')
+                        $('#ringh').attr('h',1)
              }
          }
        }) 
      }
 function am1(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (28*vw), y: (25.4*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (28*vw), y: (21.4*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring2')[0].style.rotate = angle+'deg';
@@ -353,14 +148,16 @@ function am1(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','21vw')
-                    $('.ring2').css('rotate','-7deg')
                     if($('#ringa').attr('a') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',2)
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','20.3vw')
+                    $('.ring2').css('rotate','-8deg')
+                    
+                        $('#ringa').attr('a',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 2.2 && parseInt($('.ring2').css('rotate')) > 0){
@@ -368,14 +165,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','20.7vw')
-                    $('.ring2').css('rotate','1.8deg')
                     if($('#ringb').attr('b') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',2)
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','20vw')
+                    $('.ring2').css('rotate','1deg')
+                    
+                        $('#ringb').attr('b',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 13 && parseInt($('.ring2').css('rotate')) > 7){
@@ -383,14 +182,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','21vw')
-                    $('.ring2').css('rotate','10deg')
                     if($('#ringc').attr('c') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',2)
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','20.5vw')
+                    $('.ring2').css('rotate','9.8deg')
+                    
+                        $('#ringc').attr('c',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 20 && parseInt($('.ring2').css('rotate')) > 16){
@@ -398,14 +199,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','22vw')
-                    $('.ring2').css('rotate','18.5deg')
                     if($('#ringd').attr('d') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',2)
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','21.3vw')
+                    $('.ring2').css('rotate','18deg')
+                    
+                        $('#ringd').attr('d',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 28 && parseInt($('.ring2').css('rotate')) > 23){
@@ -413,14 +216,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','23vw')
-                    $('.ring2').css('rotate','25.8deg')
                     if($('#ringe').attr('e') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',2)
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','22.7vw')
+                    $('.ring2').css('rotate','25.2deg')
+                    
+                        $('#ringe').attr('e',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 35 && parseInt($('.ring2').css('rotate')) > 30){
@@ -428,14 +233,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','25vw')
-                    $('.ring2').css('rotate','32.8deg')
                     if($('#ringf').attr('f') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',2)
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','24vw')
+                    $('.ring2').css('rotate','31deg')
+                    
+                        $('#ringf').attr('f',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) <40 && parseInt($('.ring2').css('rotate')) > 36){
@@ -443,14 +250,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','27vw')
-                    $('.ring2').css('rotate','38.5deg')
                     if($('#ringg').attr('g') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',2)
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','26vw')
+                    $('.ring2').css('rotate','37.5deg')
+                    
+                        $('#ringg').attr('g',2)
                 }
             }
             if(parseInt($('.ring2').css('rotate')) < 45 && parseInt($('.ring2').css('rotate')) > 40){
@@ -458,14 +267,16 @@ function am1(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow2').css('width','29vw')
-                    $('.ring2').css('rotate','43.5deg')
                     if($('#ringh').attr('h') != 0){
-                        $('.arrow2').css('width','0.5vw')
-                        $('.ring2').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',2)
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow2').css('width','28vw')
+                    $('.ring2').css('rotate','42.5deg')
+                    
+                        $('#ringh').attr('h',2)
                 }
             }
 
@@ -474,8 +285,8 @@ function am1(){
 }
 function am2(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (30.5*vw), y: (28.6*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (30.5*vw), y: (25*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring3')[0].style.rotate = angle+'deg';
@@ -487,14 +298,16 @@ function am2(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','21vw')
-                    $('.ring3').css('rotate','-16.87deg')
                     if($('#ringa').attr('a') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',3)
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','20vw')
+                    $('.ring3').css('rotate','-16.87deg')
+                    
+                        $('#ringa').attr('a',3)
                 }
             } 
             if(parseInt($('.ring3').css('rotate')) < -4 && parseInt($('.ring3').css('rotate')) > -10){
@@ -502,14 +315,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','20vw')
-                    $('.ring3').css('rotate','-8.87deg')
                     if($('#ringb').attr('b') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',3)
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','19.35vw')
+                    $('.ring3').css('rotate','-8.87deg')
+                    
+                        $('#ringb').attr('b',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 5 && parseInt($('.ring3').css('rotate')) > -2){
@@ -517,14 +332,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','20vw')
-                    $('.ring3').css('rotate','0.3deg')
                     if($('#ringc').attr('c') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',3)
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','19vw')
+                    $('.ring3').css('rotate','0.3deg')
+                    
+                        $('#ringc').attr('c',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 14 && parseInt($('.ring3').css('rotate')) > 7){
@@ -532,14 +349,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','20vw')
-                    $('.ring3').css('rotate','10deg')
                     if($('#ringd').attr('d') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',3)
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','19.5vw')
+                    $('.ring3').css('rotate','10deg')
+                    
+                        $('#ringd').attr('d',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 21 && parseInt($('.ring3').css('rotate')) > 15.5){
@@ -547,14 +366,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','21vw')
-                    $('.ring3').css('rotate','18deg')
                     if($('#ringe').attr('e') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',3)
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','20.4vw')
+                    $('.ring3').css('rotate','18deg')
+                    
+                        $('#ringe').attr('e',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 29 && parseInt($('.ring3').css('rotate')) > 23){
@@ -562,14 +383,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','22vw')
-                    $('.ring3').css('rotate','26deg')
                     if($('#ringf').attr('f') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',3)
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','21.5vw')
+                    $('.ring3').css('rotate','26deg')
+                    
+                        $('#ringf').attr('f',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 34 && parseInt($('.ring3').css('rotate')) > 28){
@@ -577,14 +400,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','24vw')
-                    $('.ring3').css('rotate','32.6deg')
                     if($('#ringg').attr('g') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',3)
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','23.3vw')
+                    $('.ring3').css('rotate','32.6deg')
+                    
+                        $('#ringg').attr('g',3)
                 }
             }
             if(parseInt($('.ring3').css('rotate')) < 42 && parseInt($('.ring3').css('rotate')) > 35){
@@ -592,14 +417,16 @@ function am2(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow3').css('width','26vw')
-                    $('.ring3').css('rotate','38.4deg')
                     if($('#ringh').attr('h') != 0){
-                        $('.arrow3').css('width','0.5vw')
-                        $('.ring3').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',3)
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow3').css('width','25.3vw')
+                    $('.ring3').css('rotate','38.4deg')
+                    
+                        $('#ringh').attr('h',3)
                 }
             }
 
@@ -608,8 +435,8 @@ function am2(){
 }
 function am3(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (27.5*vw), y: (31.8*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (27.5*vw), y: (28.5*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring4')[0].style.rotate = angle+'deg';
@@ -621,14 +448,16 @@ function am3(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','23.4vw')
-                    $('.ring4').css('rotate','-22.8deg')
                     if($('#ringa').attr('a') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',4)
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','22.9vw')
+                    $('.ring4').css('rotate','-23.5deg')
+                    
+                        $('#ringa').attr('a',4)
                 }
             } 
             if(parseInt($('.ring4').css('rotate')) < -13 && parseInt($('.ring4').css('rotate')) > -18){
@@ -636,14 +465,16 @@ function am3(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','22.2vw')
-                    $('.ring4').css('rotate','-16deg')
                     if($('#ringb').attr('b') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',4)
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','21.6vw')
+                    $('.ring4').css('rotate','-16deg')
+                    
+                        $('#ringb').attr('b',4)
                 }
             }
             if(parseInt($('.ring4').css('rotate')) < -2 && parseInt($('.ring4').css('rotate')) > -10){
@@ -651,14 +482,16 @@ function am3(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','21.5vw')
-                    $('.ring4').css('rotate','-8deg')
                     if($('#ringc').attr('c') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',4)
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','20.9vw')
+                    $('.ring4').css('rotate','-8deg')
+                    
+                        $('#ringc').attr('c',4)
                 }
             }
             if(parseInt($('.ring4').css('rotate')) < 2.5 && parseInt($('.ring4').css('rotate')) > -2.5){
@@ -666,14 +499,16 @@ function am3(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','21.2vw')
-                    $('.ring4').css('rotate','0.6deg')
                     if($('#ringd').attr('d') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',4)
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','20.6vw')
+                    $('.ring4').css('rotate','0.6deg')
+                    
+                        $('#ringd').attr('d',4)
                 }
             }
             if(parseInt($('.ring4').css('rotate')) < 12 && parseInt($('.ring4').css('rotate')) > 6){
@@ -681,14 +516,16 @@ function am3(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','21.5vw')
-                    $('.ring4').css('rotate','8.6deg')
                     if($('#ringe').attr('e') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',4)
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','20.8vw')
+                    $('.ring4').css('rotate','8.6deg')
+                    
+                        $('#ringe').attr('e',4)
                     
                 }
             }
@@ -697,14 +534,16 @@ function am3(){
                     console.log(parseInt($('.ring4').css('rotate')))
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','22.5vw')
-                    $('.ring4').css('rotate','17.2deg')
                     if($('#ringf').attr('f') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',4)
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','21.7vw')
+                    $('.ring4').css('rotate','17.2deg')
+                    
+                        $('#ringf').attr('f',4)
                     
                 }
             }
@@ -713,14 +552,16 @@ function am3(){
                     console.log(parseInt($('.ring4').css('rotate')))
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','23.9vw')
-                    $('.ring4').css('rotate','24.5deg')
                     if($('#ringg').attr('g') != 0){
-                        $('.arrow4').css('width','0.5vw')
-                        $('.ring4').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',4)
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
                         }
+                    $('.arrow4').css('width','22.9vw')
+                    $('.ring4').css('rotate','24.5deg')
+                    
+                        $('#ringg').attr('g',4)
                     
                 }
             }
@@ -729,22 +570,23 @@ function am3(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
-                    $('.arrow4').css('width','25.5vw')
-                    $('.ring4').css('rotate','31.5deg')
                         if($('#ringh').attr('h') != 0){
-                            $('.arrow4').css('width','0.5vw')
-                            $('.ring4').css('rotate','0deg');
-                            }else{
-                                $('#ringh').attr('h',4)
+                            var aaa = $('#ringh').attr('h');
+                         
+                            $('.arrow'+aaa).css('width','0.5vw')
+                            $('.ring'+aaa).css('rotate','0deg');
                             }
+                            $('.arrow4').css('width','24.4vw')
+                            $('.ring4').css('rotate','30.6deg')
+                                    $('#ringh').attr('h',4)
                 }
             }
 })
 }
 function am4(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (29.5*vw), y: (35*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (29.5*vw), y: (32.3*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring5')[0].style.rotate = angle+'deg';
@@ -756,14 +598,16 @@ function am4(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringa').attr('a') != 0){
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','23.2vw')
                     $('.ring5').css('rotate','-32.3deg')
-                    if($('#ringa').attr('a') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',5)
-                        }
+                    
+                        $('#ringa').attr('a',5)
                 }
             } 
             if(parseInt($('.ring5').css('rotate')) < -22 && parseInt($('.ring5').css('rotate')) > -27){
@@ -771,14 +615,16 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringb').attr('b') != 0){
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','21.5vw')
                     $('.ring5').css('rotate','-25.5deg')
-                    if($('#ringb').attr('b') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',5)
-                        }
+                    
+                        $('#ringb').attr('b',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < -15 && parseInt($('.ring5').css('rotate')) > -19.5){
@@ -786,14 +632,16 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringc').attr('c') != 0){
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','20.5vw')
                     $('.ring5').css('rotate','-17.5deg')
-                    if($('#ringc').attr('c') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',5)
-                        }
+                    
+                        $('#ringc').attr('c',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < -6.5 && parseInt($('.ring5').css('rotate')) > -11.5){
@@ -801,14 +649,16 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringd').attr('d') != 0){
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','19.5vw')
                     $('.ring5').css('rotate','-8.5deg')
-                    if($('#ringd').attr('d') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',5)
-                        }
+                    
+                        $('#ringd').attr('d',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < 1.5 && parseInt($('.ring5').css('rotate')) > -0.8){
@@ -816,14 +666,16 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringe').attr('e') != 0){
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','19.5vw')
                     $('.ring5').css('rotate','0deg')
-                    if($('#ringe').attr('e') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',5)
-                        }
+                    
+                        $('#ringe').attr('e',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < 11 && parseInt($('.ring5').css('rotate')) > 7){
@@ -831,14 +683,16 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringf').attr('f') != 0){
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','19.5vw')
                     $('.ring5').css('rotate','9deg')
-                    if($('#ringf').attr('f') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',5)
-                        }
+                    
+                        $('#ringf').attr('f',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < 21 && parseInt($('.ring5').css('rotate')) > 15){
@@ -846,14 +700,16 @@ function am4(){
                     console.log(parseInt($('.ring5').css('rotate')))
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringg').attr('g') != 0){
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','20.5vw')
                     $('.ring5').css('rotate','18.5deg')
-                    if($('#ringg').attr('g') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',5)
-                        }
+                    
+                        $('#ringg').attr('g',5)
                 }
             }
             if(parseInt($('.ring5').css('rotate')) < 28.5 && parseInt($('.ring5').css('rotate')) > 21){
@@ -861,22 +717,24 @@ function am4(){
                     console.log('p1')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringh').attr('h') != 0){
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow5').css('width','22vw')
                     $('.ring5').css('rotate','26.5deg')
-                    if($('#ringh').attr('h') != 0){
-                        $('.arrow5').css('width','0.5vw')
-                        $('.ring5').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',5)
-                        }
+                    
+                        $('#ringh').attr('h',5)
                 }
             }
 })
 }
 function am5(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (28.5*vw), y: (38.3*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (28.5*vw), y: (35.8*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring6')[0].style.rotate = angle+'deg';
@@ -888,14 +746,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringa').attr('a') != 0){
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','27.8vw')
                     $('.ring6').css('rotate','-36deg')
-                    if($('#ringa').attr('a') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',6)
-                        }
+                    
+                        $('#ringa').attr('a',6)
                 }
             } 
             if(parseInt($('.ring6').css('rotate')) < -28 && parseInt($('.ring6').css('rotate')) > -33){
@@ -903,14 +763,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringb').attr('b') != 0){
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','26vw')
                     $('.ring6').css('rotate','-30.3deg')
-                    if($('#ringb').attr('b') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',6)
-                        }
+                    
+                        $('#ringb').attr('b',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < -20 && parseInt($('.ring6').css('rotate')) > -25){
@@ -918,14 +780,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringc').attr('c') != 0){
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','24.4vw')
                     $('.ring6').css('rotate','-23.3deg')
-                    if($('#ringc').attr('c') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',6)
-                        }
+                    
+                        $('#ringc').attr('c',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < -14 && parseInt($('.ring6').css('rotate')) > -18){
@@ -933,14 +797,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringd').attr('d') != 0){
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','23.3vw')
                     $('.ring6').css('rotate','-16.3deg')
-                    if($('#ringd').attr('d') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',6)
-                        }
+                    
+                        $('#ringd').attr('d',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < -7 && parseInt($('.ring6').css('rotate')) > -11){
@@ -948,14 +814,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringe').attr('e') != 0){
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','22.5vw')
                     $('.ring6').css('rotate','-9deg')
-                    if($('#ringe').attr('e') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',6)
-                        }
+                    
+                        $('#ringe').attr('e',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < 1.5 && parseInt($('.ring6').css('rotate')) > -2){
@@ -963,14 +831,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringf').attr('f') != 0){
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','22.5vw')
                     $('.ring6').css('rotate','0deg')
-                    if($('#ringf').attr('f') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',6)
-                        }
+                    
+                        $('#ringf').attr('f',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < 9 && parseInt($('.ring6').css('rotate')) > 5){
@@ -978,14 +848,16 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringg').attr('g') != 0){
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','22.5vw')
                     $('.ring6').css('rotate','7.3deg')
-                    if($('#ringg').attr('g') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',6)
-                        }
+                    
+                        $('#ringg').attr('g',6)
                 }
             }
             if(parseInt($('.ring6').css('rotate')) < 17 && parseInt($('.ring6').css('rotate')) > 14){
@@ -993,22 +865,24 @@ function am5(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringh').attr('h') != 0){
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow6').css('width','23.2vw')
                     $('.ring6').css('rotate','15.5deg')
-                    if($('#ringh').attr('h') != 0){
-                        $('.arrow6').css('width','0.5vw')
-                        $('.ring6').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',6)
-                        }
+                    
+                        $('#ringh').attr('h',6)
                 }
             }
 })
 }
 function am6(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (31.5*vw), y: (41.3*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (31.5*vw), y: (39.3*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring7')[0].style.rotate = angle+'deg';
@@ -1020,14 +894,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringa').attr('a') != 0){
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','26.5vw')
                     $('.ring7').css('rotate','-47.4deg')
-                    if($('#ringa').attr('a') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',7)
-                        }
+                    
+                        $('#ringa').attr('a',7)
                 }
             } 
             if(parseInt($('.ring7').css('rotate')) < -38 && parseInt($('.ring7').css('rotate')) > -44){
@@ -1035,14 +911,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringb').attr('b') != 0){
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','24vw')
                     $('.ring7').css('rotate','-42deg')
-                    if($('#ringb').attr('b') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',7)
-                        }
+                    
+                        $('#ringb').attr('b',7)
                 }
             } 
             if(parseInt($('.ring7').css('rotate')) < -32 && parseInt($('.ring7').css('rotate')) > -39){
@@ -1050,14 +928,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringc').attr('c') != 0){
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','22vw')
                     $('.ring7').css('rotate','-36deg')
-                    if($('#ringc').attr('c') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',7)
-                        }
+                    
+                        $('#ringc').attr('c',7)
                 }
             }
             if(parseInt($('.ring7').css('rotate')) < -24 && parseInt($('.ring7').css('rotate')) > -30){
@@ -1065,14 +945,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringd').attr('d') != 0){
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','20.1vw')
                     $('.ring7').css('rotate','-28.4deg')
-                    if($('#ringd').attr('d') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',7)
-                        }
+                    
+                        $('#ringd').attr('d',7)
                 }
             }
             if(parseInt($('.ring7').css('rotate')) < -17 && parseInt($('.ring7').css('rotate')) > -22){
@@ -1080,14 +962,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringe').attr('e') != 0){
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','18.4vw')
                     $('.ring7').css('rotate','-20deg')
-                    if($('#ringe').attr('e') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',7)
-                        }
+                    
+                        $('#ringe').attr('e',7)
                 }
             }
             if(parseInt($('.ring7').css('rotate')) < -8 && parseInt($('.ring7').css('rotate')) > -12){
@@ -1095,14 +979,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringf').attr('f') != 0){
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','17.6vw')
                     $('.ring7').css('rotate','-10deg')
-                    if($('#ringf').attr('f') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',7)
-                        }
+                    
+                        $('#ringf').attr('f',7)
                 }
             }
             if(parseInt($('.ring7').css('rotate')) < 1.5 && parseInt($('.ring7').css('rotate')) > -2){
@@ -1110,14 +996,16 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringg').attr('g') != 0){
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','17.5vw')
                     $('.ring7').css('rotate','0deg')
-                    if($('#ringg').attr('g') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',7)
-                        }
+                    
+                        $('#ringg').attr('g',7)
                 }
             }
             if(parseInt($('.ring7').css('rotate')) < 13 && parseInt($('.ring7').css('rotate')) > 6){
@@ -1125,22 +1013,24 @@ function am6(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringh').attr('h') != 0){
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow7').css('width','17.5vw')
                     $('.ring7').css('rotate','10deg')
-                    if($('#ringh').attr('h') != 0){
-                        $('.arrow7').css('width','0.5vw')
-                        $('.ring7').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',7)
-                        }
+                    
+                        $('#ringh').attr('h',7)
                 }
             }
 })
 }
 function am7(){
     document.body.ontouchmove = (ee)=>{
-        const mousePos = { x: parseInt(ee.touches[0].clientX), y: parseInt(ee.touches[0].clientY) }
-        const carPos = { x: (32.5*vw), y: (44.5*vw) }
+        const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
+        const carPos = { x: (32.5*vw), y: (42.8*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring8')[0].style.rotate = angle+'deg';
@@ -1152,14 +1042,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringa').attr('a') != 0){
+                        var aaa = $('#ringa').attr('a');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','28.5vw')
                     $('.ring8').css('rotate','-53.2deg')
-                    if($('#ringa').attr('a') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringa').attr('a',8)
-                        }
+                    
+                        $('#ringa').attr('a',8)
                 }
             } 
             if(parseInt($('.ring8').css('rotate')) < -46 && parseInt($('.ring8').css('rotate')) > -52){
@@ -1167,14 +1059,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringb').attr('b') != 0){
+                        var aaa = $('#ringb').attr('b');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','25.5vw')
                     $('.ring8').css('rotate','-49deg')
-                    if($('#ringb').attr('b') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringb').attr('b',8)
-                        }
+                    
+                        $('#ringb').attr('b',8)
                 }
             } 
             if(parseInt($('.ring8').css('rotate')) < -40 && parseInt($('.ring8').css('rotate')) > -45){
@@ -1182,14 +1076,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringc').attr('c') != 0){
+                        var aaa = $('#ringc').attr('c');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','23.5vw')
                     $('.ring8').css('rotate','-43deg')
-                    if($('#ringc').attr('c') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringc').attr('c',8)
-                        }
+                    
+                        $('#ringc').attr('c',8)
                 }
             } 
             if(parseInt($('.ring8').css('rotate')) < -33 && parseInt($('.ring8').css('rotate')) > -40){
@@ -1197,14 +1093,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringd').attr('d') != 0){
+                        var aaa = $('#ringd').attr('d');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','21vw')
                     $('.ring8').css('rotate','-37deg')
-                    if($('#ringd').attr('d') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringd').attr('d',8)
-                        }
+                    
+                        $('#ringd').attr('d',8)
                 }
             } 
             if(parseInt($('.ring8').css('rotate')) < -27 && parseInt($('.ring8').css('rotate')) > -33){
@@ -1212,14 +1110,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringe').attr('e') != 0){
+                        var aaa = $('#ringe').attr('e');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','19vw')
                     $('.ring8').css('rotate','-30deg')
-                    if($('#ringe').attr('e') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringe').attr('e',8)
-                        }
+                    
+                        $('#ringe').attr('e',8)
                 }
             }
             if(parseInt($('.ring8').css('rotate')) < -18 && parseInt($('.ring8').css('rotate')) > -23){
@@ -1227,14 +1127,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringf').attr('f') != 0){
+                        var aaa = $('#ringf').attr('f');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','17.4vw')
                     $('.ring8').css('rotate','-21deg')
-                    if($('#ringf').attr('f') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringf').attr('f',8)
-                        }
+                    
+                        $('#ringf').attr('f',8)
                 }
             }
             if(parseInt($('.ring8').css('rotate')) < -10 && parseInt($('.ring8').css('rotate')) > -14){
@@ -1242,14 +1144,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringg').attr('g') != 0){
+                        var aaa = $('#ringg').attr('g');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','16.8vw')
                     $('.ring8').css('rotate','-11deg')
-                    if($('#ringg').attr('g') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringg').attr('g',8)
-                        }
+                    
+                        $('#ringg').attr('g',8)
                 }
             }
             if(parseInt($('.ring8').css('rotate')) < 3 && parseInt($('.ring8').css('rotate')) > -4){
@@ -1257,14 +1161,16 @@ function am7(){
                     console.log('p')
                     clearInterval(arrowMove);
                     document.body.ontouchmove = ()=>{}
+                    if($('#ringh').attr('h') != 0){
+                        var aaa = $('#ringh').attr('h');
+                         
+                        $('.arrow'+aaa).css('width','0.5vw')
+                        $('.ring'+aaa).css('rotate','0deg');
+                        }
                     $('.arrow8').css('width','16.3vw')
                     $('.ring8').css('rotate','0deg')
-                    if($('#ringh').attr('h') != 0){
-                        $('.arrow8').css('width','0.5vw')
-                        $('.ring8').css('rotate','0deg');
-                        }else{
-                            $('#ringh').attr('h',8)
-                        }
+                    
+                        $('#ringh').attr('h',8)
                 }
             }
 })
