@@ -52,35 +52,7 @@ am0()
               am7();
             }        
     }
-var alldrop = document.getElementsByClassName('drop');
-for (let i = 0; i < alldrop.length; i++) {
-  alldrop[i].onclick=()=>{
-    var a = $(alldrop[i]).attr('id')
-     b= a.slice(a.length-1)
-    console.log(b)
-    var x = $(alldrop[i]).attr(b);
-    if(x != 0){
-     if(x==1){$('.arrow').css('width','0.5vw')
-     $('.ring1').css('rotate','0deg');} 
-     if(x==2){$('.arrow2').css('width','0.5vw')
-     $('.ring2').css('rotate','0deg');} 
-     if(x==3){$('.arrow3').css('width','0.5vw')
-     $('.ring3').css('rotate','0deg');} 
-     if(x==4){$('.arrow4').css('width','0.5vw')
-     $('.ring4').css('rotate','0deg');} 
-     if(x==5){$('.arrow5').css('width','0.5vw')
-     $('.ring5').css('rotate','0deg');} 
-     if(x==6){$('.arrow6').css('width','0.5vw')
-     $('.ring6').css('rotate','0deg');} 
-     if(x==7){$('.arrow7').css('width','0.5vw')
-     $('.ring7').css('rotate','0deg');} 
-     if(x==8){$('.arrow8').css('width','0.5vw')
-     $('.ring8').css('rotate','0deg');} 
-     $(alldrop[i]).attr(b,0)
-    }
-  }
-  
-}   
+   
 const qa = [{a:1,b:5,c:8,d:3,e:7,f:2,g:6,h:4}]
 document.getElementById('submit').onclick=()=>{
   var alld = document.getElementsByClassName('drop');
@@ -97,8 +69,8 @@ document.getElementById('submit').onclick=()=>{
       }
     }
     else if(x!=0 && x==1){
-      if(x== qa[0][b]){$('.arrow').css('background-color','rgb(2 163 59)')}
-      else{$('.arrow').css('background-color','darkred')}
+      if(x== qa[0][b]){$('.arrow1').css('background-color','rgb(2 163 59)')}
+      else{$('.arrow1').css('background-color','darkred')}
     }
   }
 }
@@ -124,11 +96,11 @@ function openFullscreen() {
 document.body.onload=()=>{
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     document.getElementById('mobile').style.display = 'block';
-    if(window.innerHeight>window.innerWidth){
+    if(screen.availHeight>screen.availWidth){
         $('#popup1').css({'display':'flex'});
         var a = setInterval(()=>{
           console.log('a')
-          if(window.innerHeight<window.innerWidth){document.getElementById('popup1').style.display = 'none';location.reload();clearInterval(a);}
+          if(screen.availHeight<screen.availWidth){document.getElementById('popup1').style.display = 'none';location.reload();clearInterval(a);}
         })
     }
   }else{
