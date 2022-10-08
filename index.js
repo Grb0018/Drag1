@@ -1,6 +1,6 @@
 let vw = window.innerWidth/100;
  document.body.onmousedown = (e)=>{
- if(e.target== document.getElementsByClassName('right')[0]){
+ if(e.target== document.getElementsByClassName('right1')[0]){
    a0();
  }
  if(e.target== document.getElementsByClassName('right2')[0]){
@@ -27,7 +27,7 @@ let vw = window.innerWidth/100;
  }
  document.body.ontouchstart = (e)=>{
   console.log(e.target)
-    if(e.target== document.getElementsByClassName('right')[0]){
+    if(e.target== document.getElementsByClassName('right1')[0]){
 am0()
     }
     if(e.target== document.getElementsByClassName('right2')[0]){
@@ -105,5 +105,8 @@ document.body.onload=()=>{
     }
   }else{
     document.getElementById('mobile').style.display = 'none'
+  }
+  if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    $('#mobile').fadeOut()
   }
 }
