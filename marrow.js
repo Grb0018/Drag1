@@ -1,9 +1,10 @@
 function am0(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (26*vw), y: (18.2*vw) }
+        const carPos = { x: (28*vw), y: (18.2*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right1').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring1')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow1')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -15,10 +16,12 @@ function am0(){
                     var aaa = $('#ringa').attr('a')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                 }
                 document.body.ontouchmove = ()=>{}
                 $('.arrow1').css('width','22vw')
                 $('.ring1').css('rotate','1deg');
+                $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
             
                     $('#ringa').attr('a',1)
                 
@@ -33,10 +36,12 @@ function am0(){
                     var aaa = $('#ringb').attr('b')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','22vw')
                  $('.ring1').css('rotate','8.6deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringb').attr('b',1)
              }
          }
@@ -48,10 +53,12 @@ function am0(){
                     var aaa = $('#ringc').attr('c')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','23vw')
                  $('.ring1').css('rotate','16deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringc').attr('c',1)
              }
          }
@@ -63,10 +70,12 @@ function am0(){
                     var aaa = $('#ringd').attr('d')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','24vw')
                  $('.ring1').css('rotate','23.5deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',1)
                     
              }
@@ -79,10 +88,12 @@ function am0(){
                     var aaa = $('#ringe').attr('e')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','25.7vw')
                  $('.ring1').css('rotate','29deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',1)
              }
          }
@@ -94,10 +105,12 @@ function am0(){
                     var aaa = $('#ringf').attr('f')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','27.7vw')
                  $('.ring1').css('rotate','35.5deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',1)
              }
          }
@@ -109,10 +122,12 @@ function am0(){
                     var aaa = $('#ringg').attr('g')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','29.9vw')
                  $('.ring1').css('rotatf','40.5deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',1)
              }
          }
@@ -124,10 +139,12 @@ function am0(){
                     var aaa = $('#ringh').attr('h')
                 $('.arrow'+aaa).css('width','0.5vw')
                 $('.ring'+aaa).css('rotate','0deg');
+                $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                     }
                  document.body.ontouchmove = ()=>{}
                  $('.arrow1').css('width','32.2vw')
                  $('.ring1').css('rotate','44.5deg')
+                 $('.right1').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringh').attr('h',1)
              }
          }
@@ -136,9 +153,10 @@ function am0(){
 function am1(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (28*vw), y: (21.4*vw) }
+        const carPos = { x: (30*vw), y: (21.4*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right2').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring2')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow2')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -150,12 +168,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','20.3vw')
                     $('.ring2').css('rotate','-8deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringa').attr('a',2)
                 }
@@ -167,12 +186,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','20vw')
                     $('.ring2').css('rotate','1deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringb').attr('b',2)
                 }
@@ -184,12 +204,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','20.5vw')
                     $('.ring2').css('rotate','9.8deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringc').attr('c',2)
                 }
@@ -201,12 +222,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','21.3vw')
                     $('.ring2').css('rotate','18deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringd').attr('d',2)
                 }
@@ -218,12 +240,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','22.7vw')
                     $('.ring2').css('rotate','25.2deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringe').attr('e',2)
                 }
@@ -235,12 +258,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','24vw')
                     $('.ring2').css('rotate','31deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringf').attr('f',2)
                 }
@@ -252,12 +276,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','26vw')
                     $('.ring2').css('rotate','37.5deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringg').attr('g',2)
                 }
@@ -269,12 +294,13 @@ function am1(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow2').css('width','28vw')
                     $('.ring2').css('rotate','42.5deg')
+                    $('.right2').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringh').attr('h',2)
                 }
@@ -286,9 +312,10 @@ function am1(){
 function am2(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (30.5*vw), y: (25*vw) }
+        const carPos = { x: (32.5*vw), y: (25*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right3').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring3')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow3')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -300,12 +327,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','20vw')
                     $('.ring3').css('rotate','-16.87deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringa').attr('a',3)
                 }
@@ -317,12 +345,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','19.35vw')
                     $('.ring3').css('rotate','-8.87deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringb').attr('b',3)
                 }
@@ -334,12 +363,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','19vw')
                     $('.ring3').css('rotate','0.3deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringc').attr('c',3)
                 }
@@ -351,12 +381,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','19.5vw')
                     $('.ring3').css('rotate','10deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringd').attr('d',3)
                 }
@@ -368,12 +399,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','20.4vw')
                     $('.ring3').css('rotate','18deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringe').attr('e',3)
                 }
@@ -385,12 +417,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','21.5vw')
                     $('.ring3').css('rotate','26deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringf').attr('f',3)
                 }
@@ -402,12 +435,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','23.3vw')
                     $('.ring3').css('rotate','32.6deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringg').attr('g',3)
                 }
@@ -419,12 +453,13 @@ function am2(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow3').css('width','25.3vw')
                     $('.ring3').css('rotate','38.4deg')
+                    $('.right3').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringh').attr('h',3)
                 }
@@ -436,9 +471,10 @@ function am2(){
 function am3(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (27.5*vw), y: (28.5*vw) }
+        const carPos = { x: (29.5*vw), y: (28.5*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right4').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring4')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow4')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -450,13 +486,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','22.9vw')
                     $('.ring4').css('rotate','-23.5deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringa').attr('a',4)
                 }
             } 
@@ -467,13 +503,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','21.6vw')
                     $('.ring4').css('rotate','-16deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringb').attr('b',4)
                 }
             }
@@ -484,13 +520,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','20.9vw')
                     $('.ring4').css('rotate','-8deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringc').attr('c',4)
                 }
             }
@@ -501,13 +537,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','20.6vw')
                     $('.ring4').css('rotate','0.6deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',4)
                 }
             }
@@ -518,13 +554,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','20.8vw')
                     $('.ring4').css('rotate','8.6deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',4)
                     
                 }
@@ -536,13 +572,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','21.7vw')
                     $('.ring4').css('rotate','17.2deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',4)
                     
                 }
@@ -554,13 +590,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
                     $('.arrow4').css('width','22.9vw')
                     $('.ring4').css('rotate','24.5deg')
-                    
+                    $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',4)
                     
                 }
@@ -572,12 +608,13 @@ function am3(){
                     document.body.ontouchmove = ()=>{}
                         if($('#ringh').attr('h') != 0){
                             var aaa = $('#ringh').attr('h');
-                         
+                            $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                             $('.arrow'+aaa).css('width','0.5vw')
                             $('.ring'+aaa).css('rotate','0deg');
                             }
                             $('.arrow4').css('width','24.4vw')
                             $('.ring4').css('rotate','30.6deg')
+                            $('.right4').attr('style','background-image:url(./IMG/btnDone.png)')
                                     $('#ringh').attr('h',4)
                 }
             }
@@ -586,9 +623,10 @@ function am3(){
 function am4(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (29.5*vw), y: (32.3*vw) }
+        const carPos = { x: (31.5*vw), y: (32.3*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right5').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring5')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow5')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -600,12 +638,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','23.2vw')
-                    $('.ring5').css('rotate','-32.3deg')
+                    $('.arrow5').css('width','22.8vw')
+                    $('.ring5').css('rotate','-33.3deg')
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringa').attr('a',5)
                 }
@@ -617,12 +656,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','21.5vw')
-                    $('.ring5').css('rotate','-25.5deg')
+                    $('.arrow5').css('width','21vw')
+                    $('.ring5').css('rotate','-26deg')
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringb').attr('b',5)
                 }
@@ -634,12 +674,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','20.5vw')
+                    $('.arrow5').css('width','19.6vw')
                     $('.ring5').css('rotate','-17.5deg')
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                     
                         $('#ringc').attr('c',5)
                 }
@@ -651,13 +692,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','19.5vw')
+                    $('.arrow5').css('width','18.8vw')
                     $('.ring5').css('rotate','-8.5deg')
-                    
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',5)
                 }
             }
@@ -668,13 +709,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','19.5vw')
+                    $('.arrow5').css('width','18.5vw')
                     $('.ring5').css('rotate','0deg')
-                    
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',5)
                 }
             }
@@ -685,13 +726,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','19.5vw')
+                    $('.arrow5').css('width','18.8vw')
                     $('.ring5').css('rotate','9deg')
-                    
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',5)
                 }
             }
@@ -702,13 +743,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','20.5vw')
+                    $('.arrow5').css('width','19.6vw')
                     $('.ring5').css('rotate','18.5deg')
-                    
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',5)
                 }
             }
@@ -719,13 +760,13 @@ function am4(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow5').css('width','22vw')
+                    $('.arrow5').css('width','21.2vw')
                     $('.ring5').css('rotate','26.5deg')
-                    
+                    $('.right5').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringh').attr('h',5)
                 }
             }
@@ -734,9 +775,10 @@ function am4(){
 function am5(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (28.5*vw), y: (35.8*vw) }
+        const carPos = { x: (30.5*vw), y: (35.8*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right6').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring6')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow6')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -748,13 +790,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','27.8vw')
+                    $('.arrow6').css('width','27.2vw')
                     $('.ring6').css('rotate','-36deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringa').attr('a',6)
                 }
             } 
@@ -765,13 +807,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','26vw')
+                    $('.arrow6').css('width','25.4vw')
                     $('.ring6').css('rotate','-30.3deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringb').attr('b',6)
                 }
             }
@@ -782,13 +824,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','24.4vw')
+                    $('.arrow6').css('width','23.7vw')
                     $('.ring6').css('rotate','-23.3deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringc').attr('c',6)
                 }
             }
@@ -799,13 +841,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','23.3vw')
+                    $('.arrow6').css('width','22.55vw')
                     $('.ring6').css('rotate','-16.3deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',6)
                 }
             }
@@ -816,13 +858,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','22.5vw')
+                    $('.arrow6').css('width','21.9vw')
                     $('.ring6').css('rotate','-9deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',6)
                 }
             }
@@ -833,13 +875,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','22.5vw')
+                    $('.arrow6').css('width','21.5vw')
                     $('.ring6').css('rotate','0deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',6)
                 }
             }
@@ -850,13 +892,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','22.5vw')
-                    $('.ring6').css('rotate','7.3deg')
-                    
+                    $('.arrow6').css('width','21.7vw')
+                    $('.ring6').css('rotate','8deg')
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',6)
                 }
             }
@@ -867,13 +909,13 @@ function am5(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow6').css('width','23.2vw')
+                    $('.arrow6').css('width','22.6vw')
                     $('.ring6').css('rotate','15.5deg')
-                    
+                    $('.right6').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringh').attr('h',6)
                 }
             }
@@ -882,9 +924,10 @@ function am5(){
 function am6(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (31.5*vw), y: (39.3*vw) }
+        const carPos = { x: (33.5*vw), y: (39.3*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        $('.right7').attr('style','background-image:url(./IMG/btnOrange.png)')
         document.getElementsByClassName('ring7')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow7')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
@@ -896,13 +939,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','26.5vw')
-                    $('.ring7').css('rotate','-47.4deg')
-                    
+                    $('.arrow7').css('width','25.6vw')
+                    $('.ring7').css('rotate','-47deg')
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringa').attr('a',7)
                 }
             } 
@@ -913,13 +956,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','24vw')
+                    $('.arrow7').css('width','23.2vw')
                     $('.ring7').css('rotate','-42deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringb').attr('b',7)
                 }
             } 
@@ -930,13 +973,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','22vw')
+                    $('.arrow7').css('width','21.2vw')
                     $('.ring7').css('rotate','-36deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringc').attr('c',7)
                 }
             }
@@ -947,13 +990,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','20.1vw')
+                    $('.arrow7').css('width','19.1vw')
                     $('.ring7').css('rotate','-28.4deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',7)
                 }
             }
@@ -964,13 +1007,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','18.4vw')
+                    $('.arrow7').css('width','17.7vw')
                     $('.ring7').css('rotate','-20deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',7)
                 }
             }
@@ -981,13 +1024,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','17.6vw')
+                    $('.arrow7').css('width','16.8vw')
                     $('.ring7').css('rotate','-10deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',7)
                 }
             }
@@ -998,13 +1041,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','17.5vw')
+                    $('.arrow7').css('width','16.5vw')
                     $('.ring7').css('rotate','0deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',7)
                 }
             }
@@ -1015,13 +1058,13 @@ function am6(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow7').css('width','17.5vw')
+                    $('.arrow7').css('width','17vw')
                     $('.ring7').css('rotate','10deg')
-                    
+                    $('.right7').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringh').attr('h',7)
                 }
             }
@@ -1030,12 +1073,13 @@ function am6(){
 function am7(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (32.5*vw), y: (42.8*vw) }
+        const carPos = { x: (34.5*vw), y: (42.8*vw) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring8')[0].style.rotate = angle+'deg';
         document.getElementsByClassName('arrow8')[0].style.width= Math.sqrt(((mousePos.x - carPos.x)*(mousePos.x - carPos.x))+((mousePos.y - carPos.y)*(mousePos.y - carPos.y)))+ 'px';
         }
+        $('.right8').attr('style','background-image:url(./IMG/btnOrange.png)')
         var arrowMove = setInterval(()=>{
             if(parseInt($('.ring8').css('rotate')) < -51 && parseInt($('.ring8').css('rotate')) > -57){
                 if(parseInt($('.arrow8').css('width'))/vw >27.5){
@@ -1044,13 +1088,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringa').attr('a') != 0){
                         var aaa = $('#ringa').attr('a');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','28.5vw')
+                    $('.arrow8').css('width','28vw')
                     $('.ring8').css('rotate','-53.2deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringa').attr('a',8)
                 }
             } 
@@ -1061,13 +1105,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringb').attr('b') != 0){
                         var aaa = $('#ringb').attr('b');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','25.5vw')
+                    $('.arrow8').css('width','25.2vw')
                     $('.ring8').css('rotate','-49deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringb').attr('b',8)
                 }
             } 
@@ -1078,13 +1122,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringc').attr('c') != 0){
                         var aaa = $('#ringc').attr('c');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','23.5vw')
+                    $('.arrow8').css('width','22.4vw')
                     $('.ring8').css('rotate','-43deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringc').attr('c',8)
                 }
             } 
@@ -1095,13 +1139,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringd').attr('d') != 0){
                         var aaa = $('#ringd').attr('d');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','21vw')
+                    $('.arrow8').css('width','20.3vw')
                     $('.ring8').css('rotate','-37deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringd').attr('d',8)
                 }
             } 
@@ -1112,13 +1156,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringe').attr('e') != 0){
                         var aaa = $('#ringe').attr('e');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','19vw')
+                    $('.arrow8').css('width','18.5vw')
                     $('.ring8').css('rotate','-30deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringe').attr('e',8)
                 }
             }
@@ -1129,13 +1173,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringf').attr('f') != 0){
                         var aaa = $('#ringf').attr('f');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','17.4vw')
+                    $('.arrow8').css('width','17vw')
                     $('.ring8').css('rotate','-21deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringf').attr('f',8)
                 }
             }
@@ -1146,13 +1190,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringg').attr('g') != 0){
                         var aaa = $('#ringg').attr('g');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','16.8vw')
+                    $('.arrow8').css('width','15.8vw')
                     $('.ring8').css('rotate','-11deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringg').attr('g',8)
                 }
             }
@@ -1163,13 +1207,13 @@ function am7(){
                     document.body.ontouchmove = ()=>{}
                     if($('#ringh').attr('h') != 0){
                         var aaa = $('#ringh').attr('h');
-                         
+                        $('.right'+aaa).attr('style','background-image:url(./IMG/btnOrange.png)')
                         $('.arrow'+aaa).css('width','0.5vw')
                         $('.ring'+aaa).css('rotate','0deg');
                         }
-                    $('.arrow8').css('width','16.3vw')
+                    $('.arrow8').css('width','15.6vw')
                     $('.ring8').css('rotate','0deg')
-                    
+                    $('.right8').attr('style','background-image:url(./IMG/btnDone.png)')
                         $('#ringh').attr('h',8)
                 }
             }
