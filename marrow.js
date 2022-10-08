@@ -1,7 +1,7 @@
 function am0(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (28*vw), y: (18.2*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (28*vw), y: (18.2*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right1').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -162,7 +162,7 @@ function am0(){
 function am1(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (30*vw), y: (21.4*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (30*vw), y: (21.4*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right2').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -329,7 +329,7 @@ function am1(){
 function am2(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (32.5*vw), y: (25*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (32.5*vw), y: (25*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right3').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -496,7 +496,7 @@ function am2(){
 function am3(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (29.5*vw), y: (28.5*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (29.5*vw), y: (28.5*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right4').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -656,7 +656,7 @@ function am3(){
 function am4(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (31.5*vw), y: (32.3*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (31.5*vw), y: (32.3*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right5').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -809,7 +809,7 @@ function am4(){
 function am5(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (30.5*vw), y: (35.8*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (30.5*vw), y: (35.8*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right6').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -959,7 +959,7 @@ function am5(){
 function am6(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (33.5*vw), y: (39.3*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (33.5*vw), y: (39.3*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         $('.right7').attr('style','background-image:url(./IMG/btnOrange.png)')
@@ -1109,7 +1109,7 @@ function am6(){
 function am7(){
     document.body.ontouchmove = (ee)=>{
         const mousePos = { x: parseInt(ee.touches[0].pageX), y: parseInt(ee.touches[0].pageY) }
-        const carPos = { x: (34.5*vw), y: (42.8*vw)+((screen.availHeight -parseInt($('#container').css('height'))) / 2) }
+        const carPos = { x: (34.5*vw), y: (42.8*vw)+((window.innerHeight -parseInt($('#container').css('height'))) / 2) }
         const vector = { x: mousePos.x - carPos.x, y: mousePos.y - carPos.y }
         const angle = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
         document.getElementsByClassName('ring8')[0].style.rotate = angle+'deg';
