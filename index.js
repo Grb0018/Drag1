@@ -52,7 +52,7 @@ am0()
               am7();
             }        
     }
-   
+let score=0;   
 const qa = [{a:1,b:5,c:8,d:3,e:7,f:2,g:6,h:4}]
 document.getElementById('submit').onclick=()=>{
   var alld = document.getElementsByClassName('drop');
@@ -62,20 +62,25 @@ document.getElementById('submit').onclick=()=>{
     var x = $(alld[i]).attr(b)
     if(x!=0 && x!=1){
       if(x== qa[0][b]){
-        $('.arrow'+x).css('background-color','rgb(2 163 59)')
+        $('.arrow'+x).css('background-color','rgb(2 163 59)');
+        score++;
       }
       else{
         $('.arrow'+x).css('background-color','darkred')
       }
     }
     else if(x!=0 && x==1){
-      if(x== qa[0][b]){$('.arrow1').css('background-color','rgb(2 163 59)')}
+      if(x== qa[0][b]){$('.arrow1').css('background-color','rgb(2 163 59)');score++}
       else{$('.arrow1').css('background-color','darkred')}
     }
   }
+  $('#ans').text(score);
+  $('#score').css('display','flex')
+  $('#submit').fadeOut()
 }
 document.getElementById('mobile').onclick=()=>{
-  openFullscreen()
+  openFullscreen();
+  $('#mobile').fadeOut()
   }
 document.getElementById('reset').onclick=()=>{
 location.reload()
@@ -109,4 +114,20 @@ document.body.onload=()=>{
   if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
     $('#mobile').fadeOut()
   }
+  if(/iPhone/i.test(navigator.userAgent)){
+    $('#logo').css({
+      'width': '9vw',
+      'top': '3.5vw',
+      'right': '1.2vw'
+    })
+  }
+}
+
+
+function lightup(x){
+  var alld = document.getElementsByClassName('drop');
+  for (let i = 0; i < alld.length; i++) {
+    $(alld[i]).css({'box-shadow':'none'})
+  }
+  $(x).css({'box-shadow':'0px 0px 20px 3px #ff5722'})
 }
