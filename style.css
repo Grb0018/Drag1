@@ -41,15 +41,17 @@ body{
     width: 0.25vw;
     height: 0.2vw;
     background-color: rgb(117, 117, 117);
+    border-radius: 3vw;
 }
-.right,.right2,.right3,.right4,.right5,.right6,.right7,.right8{
+.right1,.right2,.right3,.right4,.right5,.right6,.right7,.right8{
     display: block;
     width: 2.5vw;
     height: 2.5vw;
     background-size: cover;
     position: relative;
     border-radius: 50%;
-    background-color: orangered;
+    background-image: url(./IMG/btnOrange.png);
+    background-size: cover;
     border: 1px solid lightgrey;
 }
 .popup {
@@ -214,7 +216,8 @@ cursor: pointer;}
     top: 18.5vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -226,7 +229,8 @@ cursor: pointer;}
     top: 22vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -238,7 +242,8 @@ cursor: pointer;}
     top: 25.5vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -250,7 +255,8 @@ cursor: pointer;}
     top: 29vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -262,7 +268,8 @@ cursor: pointer;}
     top: 32.4vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -274,7 +281,8 @@ cursor: pointer;}
     top: 36vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -286,7 +294,8 @@ cursor: pointer;}
     top: 39.5vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
@@ -298,7 +307,8 @@ cursor: pointer;}
     top: 43vw;
     width: 2vw;
     height: 2vw;
-    background-color: #9d9d9dad;
+    background-image: url(./IMG/rbutton.png);
+    background-size: cover;
     align-items: center;
     transform-origin: left center;
     border-radius: 50%;
